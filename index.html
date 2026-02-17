@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxuryHook ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">LuxuryHook ✨</h1>
+
+    <div class="panel">
+      <label>Webhook URL</label>
+      <input id="webhook" type="text" placeholder="https://discord.com/api/webhooks/...">
+    </div>
+
+    <div class="panel">
+      <label>Messaggio</label>
+      <textarea id="message" placeholder="Scrivi il messaggio..."></textarea>
+    </div>
+
+    <div class="panel">
+      <h2>Embeds</h2>
+
+      <label>Titolo</label>
+      <input id="embedTitle" type="text" placeholder="Titolo embed">
+
+      <label>Descrizione</label>
+      <textarea id="embedDesc" placeholder="Descrizione embed"></textarea>
+
+      <button id="addEmbed">Aggiungi Embed</button>
+    </div>
+
+    <button id="send" class="send">Invia Webhook</button>
+
+    <h2 class="preview-title">Anteprima</h2>
+    <div id="preview" class="preview"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
