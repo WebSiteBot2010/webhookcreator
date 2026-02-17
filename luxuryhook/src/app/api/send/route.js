@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function POST(req: Request) {
+export async function POST(req) {
   const { webhook, content, embed } = await req.json();
 
   try {
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Errore invio webhook" }, { status: 500 });
   }
 }
